@@ -19,43 +19,9 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-/**
-  * swap - Swaps two variables
-  * @a: pointer to first variable
-  * @b: pointer to second variable
-  *
-  */
-void swap(int *a, int *b)
-{
-	int temp;
 
-	temp = *a;
-	*a = *b;
-	*b = temp;
-}
-
-/**
-  * swap - Swaps two nodes of a dlinked list
-  * @left: pointer to a doubly linked list
-  * @right: pointer to a doubly linked list
-  *
-  * Description: This function swaps two nodes of a
-  * doubly linked list
-  *
-  */
-void swap_list(listint_t *left, listint_t *right)
-{
-	if (left == NULL || right == NULL || left == right)
-		return;
-	
-	left->next = right->next;
-	(left->prev)->next = right;
-	(right->next)->prev = left;
-	right->prev = left->prev;
-	left->prev = right;
-	right->next = left;
-}
-
+void swap(int *a, int *b);
+void swap_list(listint_t *left, listint_t *right);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
