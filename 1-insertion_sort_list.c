@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
-  * swap - Swaps two nodes of a dlinked list
+  * swap_list - Swaps two nodes of a dlinked list
   * @node_1: pointer to a doubly linked list
   * @node_2: pointer to a doubly linked list
   *
@@ -15,7 +15,7 @@ void swap_list(listint_t *node_1, listint_t *node_2)
 
 	if (!node_1 || !node_2)
 		return;
-	
+
 	node_0 = node_1->prev;
 	node_3 = node_2->next;
 	/**move node_2*/
@@ -43,7 +43,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *current, *previous;
 
-	if (!(*list))
+	if (list == NULL)
 		return;
 	current = (*list)->next;
 	while (current)
@@ -59,7 +59,8 @@ void insertion_sort_list(listint_t **list)
 				print_list(*list);
 				previous = current->prev;
 			}
-			else{
+			else
+			{
 				previous = previous->prev;
 			}
 		}
