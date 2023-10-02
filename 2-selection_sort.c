@@ -1,6 +1,21 @@
 #include "sort.h"
 
 /**
+  * swap2 - Swaps two variables
+  * @a: pointer to first variable
+  * @b: pointer to second variable
+  *
+  */
+void swap2(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+/**
   * selection_sort - Sorts an array of integers
   * @array: Array
   * @size: size of the array

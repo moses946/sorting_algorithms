@@ -1,6 +1,21 @@
 #include "sort.h"
 
 /**
+  * swap3 - Swaps two variables
+  * @a: pointer to first variable
+  * @b: pointer to second variable
+  *
+  */
+void swap3(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+/**
   * quick_sort - sorts an array using quicksort algorithm
   * @array: array
   * @size: size of the array

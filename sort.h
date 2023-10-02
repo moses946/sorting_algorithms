@@ -21,6 +21,8 @@ typedef struct listint_s
 
 
 void swap(int *a, int *b);
+void swap2(int *a, int *b);
+void swap3(int *a, int *b);
 void swap_list(listint_t *left, listint_t *right);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
