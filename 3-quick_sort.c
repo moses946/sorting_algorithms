@@ -26,7 +26,7 @@ void swap3(int *a, int *b)
   */
 void quick_sort(int *array, size_t size)
 {
-		if (array == NULL || size <= 2)
+		if (array == NULL || size <= 0)
 			return;
 
 		quicksort(array, size,  0, size - 1);
