@@ -75,7 +75,7 @@ int partition(int *array, size_t size, int lo, int hi)
 				i++;
 				if (i != j)
 				{
-					swap(&array[j], &array[i]);
+					swap3(&array[j], &array[i]);
 					print_array(array, size);
 				}
 
@@ -84,7 +84,7 @@ int partition(int *array, size_t size, int lo, int hi)
 		i++;
 		if (i != hi)
 		{
-			swap(&array[i], &array[hi]);
+			swap3(&array[i], &array[hi]);
 			print_array(array, size);
 		}
 		return (i);

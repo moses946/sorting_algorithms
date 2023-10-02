@@ -40,7 +40,7 @@ void selection_sort(int *array, size_t size)
 		}
 		if ((unsigned long) min != i)
 		{
-			swap(&array[i], &array[min]);
+			swap2(&array[i], &array[min]);
 			print_array(array, size);
 		}
 	}
